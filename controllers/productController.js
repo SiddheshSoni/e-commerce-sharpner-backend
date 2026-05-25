@@ -12,8 +12,10 @@ const getProductsById = (req, res)=>{
 };
 
 const addProduct = (req, res)=>{
-    productServices.addProduct;
-    res.send(` Added a new Product!`)
+    console.log(req.body);
+    const data = productServices.addProduct(req.body); 
+    res.json(data);
+    
 };
 
 module.exports ={

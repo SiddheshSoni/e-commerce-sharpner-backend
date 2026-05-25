@@ -6,8 +6,9 @@ const showAllProducts = ()=>{
 const selectProductsById = (id)=>{
     return id;
 }
-const addProduct = ()=>{
-    return ;
+const addProduct = (data)=>{
+    console.log(data);
+    return {value:data.productName};
 }
 
 module.exports ={
